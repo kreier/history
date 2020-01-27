@@ -1,6 +1,8 @@
 # Programming History
 Short documentation of programming projects
 
+<img src="pic/duke.gif" align="right">
+
 Over the years I used a handful of programming languages. Here are a few examples for personal documentation.
 
 ## 2020
@@ -14,6 +16,12 @@ Started with Jupyter notebook with my students. This includes Markdown, LaTeX, T
 ## 2018
 
 The BeTogetherConference in November 2018 inspired me to write the first lines in Python - and document it in [python2018 repository](https://github.com/kreier/python2018).
+
+## 2008
+
+<img src="pic/java.gif" align="right">
+
+AR65view is finalized and uploaded to Sourceforge.
 
 ## 2007
 
