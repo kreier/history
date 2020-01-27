@@ -1,0 +1,65 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{a4,german}
+
+\pagestyle{plain}
+\voffset=-1in
+\hoffset=-1in
+\setlength{\oddsidemargin}{2cm}
+\setlength{\textwidth}{17cm}
+\setlength{\topmargin}{1cm}
+\setlength{\textheight}{24cm}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1ex}
+
+\begin{document}
+\section*{"Ubungen zum Standardmodell der Teilchenphysik}
+\subsection*{3. Baker-Campbell-Hausdorff Formel}
+Gegeben seien die beschr"ankten Operatoren $\hat{A}$ und $\hat{B}$, und $\varepsilon$ sei ein infinitesimaler Parameter.
+F"ur das Produkt der Exponentialfunktionen $\exp(\varepsilon \hat{A}) \cdot \exp(\varepsilon \hat{B})$ machen wir den Ansatz
+\[\exp(\varepsilon \hat{A})\cdot \exp(\varepsilon \hat{B}) = \exp(\varepsilon \hat{X} + \varepsilon^2\hat{Y} + \varepsilon^3\hat{Z} + \mathcal{O}(\varepsilon^4)).\]
+Bestimmen Sie $\hat{X}$, $\hat{Y}$ und $\hat{Z}$, und suchen Sie kompakte Ausdr"ucke daf"ur.
+\subsubsection*{L"osung}
+Die Exponentialfunktion $\exp(\hat{A})$ ist auch f"ur Operatoren in einer Reihe definiert:
+\begin{eqnarray}
+\exp(\hat{A}) := \sum_{k=0}^\infty \frac{1}{k!}\hat{A}^k
+\end{eqnarray}
+In Produkten von e-Funktionen lassen sich die Exponenten somit offensichtlich nicht trivial addieren. Daher verkn"upfen wir in unserem Ansatz die Operatoren mit einem infinitesimalen Parameter $\varepsilon$:
+\begin{eqnarray}
+\exp(\varepsilon \hat{A})\cdot \exp(\varepsilon \hat{B}) = \exp(\varepsilon \hat{X} + \varepsilon^2\hat{Y} + \varepsilon^3\hat{Z} + \mathcal{O}(\varepsilon^4))
+\end{eqnarray}
+Nun untersuchen wir unseren Ansatz mithilfe der Reihendefinition bis zur dritten Ordnung in $\varepsilon$. Wir erhalten:
+\begin{eqnarray*}
+\exp(\varepsilon \hat{A}) \exp(\varepsilon \hat{B}) & = & \sum_{k,n=0}^\infty \frac{1}{k!}\frac{1}{n!}\varepsilon^{k+n}\hat{A}^k\hat{B}^n\\ & = & 1 + \varepsilon(\hat{A} + \hat{B}) + \varepsilon^2\left(\frac{1}{2}\hat{A}^2 + \hat{A}\hat{B} + \frac{1}{2}\hat{B}^2 \right) + \varepsilon^3\left(\frac{1}{6}\hat{A}^3 + \frac{1}{2}\hat{A}^2\hat{B} + \frac{1}{2}\hat{A}\hat{B}^2 + \frac{1}{6}\hat{B}^3 \right) + \mathcal{O}(\varepsilon^4)
+\end{eqnarray*}
+Der rechte Teil unseres Ansatzes liefert:
+\begin{eqnarray*}
+\exp(\varepsilon \hat{X} + \varepsilon^2\hat{Y} + \varepsilon^3\hat{Z} + \mathcal{O}(\varepsilon^4)) & = & \sum_{k=0}^\infty \frac{1}{k!}(\varepsilon \hat{X} + \varepsilon^2\hat{Y} + \varepsilon^3\hat{Z} + \mathcal{O}(\varepsilon^4))^k\\
+& = & 1 + \varepsilon \hat{X} + \varepsilon^2\left(\hat{Y} + \frac{1}{2}\hat{X}^2\right) + \varepsilon^3\left(\hat{Z} + \frac{1}{2}\hat{X}\hat{Y} + \frac{1}{2}\hat{Y}\hat{X} + \frac{1}{6}\hat{X}^3 \right) + \mathcal{O}(\varepsilon^4)
+\end{eqnarray*}
+Ein Koeffizientenvergleich ergibt in der ersten Ordnung von $\varepsilon$ f"ur $\hat{X}$:
+\[\hat{X} = \hat{A} + \hat{B}\]
+In der Ordnung $\varepsilon^2$ erhalten wir f"ur $\hat{Y}$:
+\begin{eqnarray*}
+\hat{Y} & = & \frac{1}{2}\hat{A}^2 + \hat{A}\hat{B} + \frac{1}{2}\hat{B}^2 - \frac{1}{2}\hat{X}^2\\   & = & \frac{1}{2}\hat{A}^2 + \hat{A}\hat{B} + \frac{1}{2}\hat{B}^2 - \frac{1}{2}\left(\hat{A}^2 + \hat{A}\hat{B} + \hat{B}\hat{A} + \hat{B}^2\right)\\ & = & \frac{1}{2}\hat{A}\hat{B} - \frac{1}{2}\hat{B}\hat{A}\\ \hat{Y} & = & \frac{1}{2}\left[\hat{A},\hat{B}\right]
+\end{eqnarray*}
+Die dritte Ordnung $\varepsilon^3$ liefert schlie"slich zu $\hat{Z}$:
+\begin{eqnarray*}
+\hat{Z} & = & \frac{1}{6}\hat{A}^3 + \frac{1}{2}\hat{A}^2\hat{B} + \frac{1}{2}\hat{A}\hat{B}^2 + \frac{1}{6}\hat{B}^3 - \frac{1}{2}\hat{X}\hat{Y} - \frac{1}{2}\hat{Y}\hat{X} - \frac{1}{6}\hat{X}^3\\ & = & \frac{1}{6}\hat{A}^3 + \frac{1}{2}\hat{A}^2\hat{B} + \frac{1}{2}\hat{A}\hat{B}^2 + \frac{1}{6}\hat{B}^3 - \frac{1}{2}\hat{X}\hat{Y} - \frac{1}{2}\hat{Y}\hat{X} - \frac{1}{6}\left(\hat{A}^3 + \hat{A}^2\hat{B} + \hat{B}^2\hat{A} + \hat{B}^3 + [\hat{A},\hat{B}]_+(\hat{A} + \hat{B})\right)\\ & = & \frac{1}{12}\left(4\hat{A}^2\hat{B} + 6\hat{A}\hat{B}^2 - 2\hat{B}^2\hat{A} - 2[\hat{A},\hat{B}]_+(\hat{A} + \hat{B}) - 6\hat{X}\hat{Y} - 6\hat{Y}\hat{X}\right)\\
+\end{eqnarray*}
+Die beiden Terme $6\hat{X}\hat{Y}$ und $6\hat{Y}\hat{X}$ lassen sich mit dem Antikommutator zu $6[\hat{X},\hat{Y}]_+$ zusammenfassen und weiter umformen:
+\[2[\hat{X},\hat{Y}]_+ = \left[\hat{A} + \hat{B}, [\hat{A},\hat{B}]\right]_+ = \hat{A}[\hat{A},\hat{B}] + [\hat{A},\hat{B}]\hat{A} + \hat{B}[\hat{A},\hat{B}] + [\hat{A},\hat{B}]\hat{B} = [\hat{A}^2,\hat{B}] + [\hat{A},\hat{B}^2]\]
+Eingesetzt ergibt sich $\hat{Z}$:
+\begin{eqnarray*}
+\hat{Z} & = & \frac{1}{12}\left(4\hat{A}^2\hat{B} + 6\hat{A}\hat{B}^2 - 2\hat{B}^2\hat{A} - 2[\hat{A},\hat{B}]_+(\hat{A} + \hat{B}) - 3[\hat{A}^2,\hat{B}] - 3[\hat{A},\hat{B}^2]\right)\\& = & \frac{1}{12}\left(4\hat{A}^2\hat{B} + 6\hat{A}\hat{B}^2 - 2\hat{B}^2\hat{A} - 2[\hat{A},\hat{B}]_+(\hat{A} + \hat{B}) - 3\hat{A}^2\hat{B} + 3\hat{B}\hat{A}^2 - 3\hat{A}\hat{B}^2 + 3\hat{B}^2\hat{A} \right)\\ & = & \frac{1}{12}\left(\hat{A}^2\hat{B} + 3\hat{B}\hat{A}^2 + 3\hat{A}\hat{B}^2 + \hat{B}^2\hat{A} - 2[\hat{A},\hat{B}]_+(\hat{A} + \hat{B}) \right)\\ & = & \frac{1}{12}\left(\hat{A}^2\hat{B} + 3\hat{B}\hat{A}^2 + 3\hat{A}\hat{B}^2 + \hat{B}^2\hat{A} - 2(\hat{A}\hat{B}\hat{A} + \hat{A}\hat{B}^2 + \hat{B}\hat{A}^2 + \hat{B}\hat{A}\hat{B}) \right)\\ & = & \frac{1}{12}\left(\underbrace{\hat{A}^2\hat{B} + \hat{B}\hat{A}^2 - 2\hat{A}\hat{B}\hat{A}}_{\left[\hat{A},[\hat{A},\hat{B}]\right]} + \underbrace{\hat{A}\hat{B}^2 + \hat{B}^2\hat{A} - 2\hat{B}\hat{A}\hat{B})}_{\left[\hat{B},[\hat{B},\hat{A}]\right]} \right)\\ \hat{Z} & = & \frac{1}{12}\left(\left[\hat{A},[\hat{A},\hat{B}]\right] + \left[\hat{B},[\hat{B},\hat{A}]\right]\right)
+\end{eqnarray*}
+Zusammenfassend gilt:\qquad
+\fbox{\parbox[t]{9cm}{\[\exp(\varepsilon \hat{A})\exp(\varepsilon \hat{B}) = \exp(\varepsilon \hat{X} + \varepsilon^2\hat{Y} + \varepsilon^3\hat{Z} + \mathcal{O}(\varepsilon^4))\]
+\qquad mit
+\begin{eqnarray*}
+\hat{X} & = & \hat{A} + \hat{B}\\
+\hat{Y} & = & \frac{1}{2}\left[\hat{A},\hat{B}\right]\\
+\hat{Z} & = & \frac{1}{12}\left(\left[\hat{A},[\hat{A},\hat{B}]\right] + \left[\hat{B},[\hat{B},\hat{A}]\right]\right)
+\end{eqnarray*}}}
+\end{document}

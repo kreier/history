@@ -1,0 +1,82 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{a4,german}
+
+\pagestyle{plain}
+\voffset=-1in
+\hoffset=-1in
+\setlength{\oddsidemargin}{2cm}
+\setlength{\textwidth}{17cm}
+\setlength{\topmargin}{0.5cm}
+\setlength{\textheight}{26cm}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1ex}
+
+\begin{document}
+\section*{"Ubungen zum Standardmodell der Teilchenphysik}
+\subsection*{16. Der Noether Strom eines geladenen Skalarfeldes}
+Eine klassische Feldtheorie in einem Volumen $V$ sei durch die Lagrange-Dichte $\mathcal{L}(\phi_1, \phi_2, \ldots,\phi_N)$ charakterisiert. Das System sei symmetrisch unter einer globalen, kontinuierlichen Transformation mit Parameter $\alpha$.\par
+Zeigen Sie, dass der Noether Strom
+\begin{eqnarray}
+j^\mu = \sum_{i=1}^N \frac{\delta\mathcal{L}}{\delta(\partial_\mu\phi_i)}\varphi_i \quad,\quad \varphi_i := \left.\frac{\partial\phi_i}{\partial\alpha}\right|_{\alpha=0}
+\end{eqnarray}
+die Kontinuit"atsgleichung erf"ullt.\par
+Betrachten Sie nun freie, komplexe Skalarfelder $\phi(x)$, $\phi^*(x)$ mit
+\[\mathcal{L}(\phi,\partial_\mu\phi,\phi^*,\partial_\mu\phi^*) = \partial_\mu\phi^*(x)\partial^\mu\phi(x) - m^2\phi^*(x)\phi(x) \;.\]
+Welcher Noether Strom und welche erhaltene Ladung resutiert aus der globalen $U(1)$ Symmetrie
+\[\phi(x) \rightarrow e^{i\alpha}\phi(x) \quad,\quad \phi^*(x) \rightarrow e^{-i\alpha}\phi^*(x) \quad?\]
+
+Woran scheitert die Interpretation der 4er-Strom Komponente $j^0$ als Wahrscheinlichkeitsdichte? Wie k"onnte man stattdessen zu einer Interpetation als Ladungsdichte gelangen?
+\subsubsection*{L"osung}
+Die Symmetrie des Systems unter einer globalen, kontinuierlichen Transformation mit Parameter $\alpha$ bedeutet
+\[\mathcal{L}(\phi_1, \phi_2, \ldots,\phi_N) = \mathcal{L}(\phi_1', \phi_2', \ldots,\phi_N')\]
+beziehungsweise
+\begin{eqnarray}
+\frac{\delta\mathcal{L}}{\delta\alpha} & = & 0 \nonumber\\
+& = & \frac{\delta\mathcal{L}}{\delta\phi_i}\frac{\partial\phi_i}{\partial\alpha} + \frac{\delta\mathcal{L}}{\delta(\partial_\mu\phi_i)}\frac{\partial(\partial_\mu\phi_i)}{\partial\alpha}
+\end{eqnarray}
+Die partiellen Ableitungen $\partial$ bzw $\delta$ und $\partial_\mu$ im zweiten Summanden lassen sich vertauschen. Mit den Regeln f"ur partielle Ableitungen kann man diesen weiter umformen und wieder zusammenfassen:
+\begin{eqnarray}
+\frac{\delta\mathcal{L}}{\delta\alpha} & = & \frac{\delta\mathcal{L}}{\delta\phi_i}\frac{\partial\phi_i}{\partial\alpha} - \left(\partial_\mu \frac{\delta\mathcal{L}}{\delta(\partial_\mu\phi_i)}\right)\frac{\partial\phi_i}{\partial\alpha} + \partial_\mu \left(\frac{\delta\mathcal{L}}{\delta(\partial_\mu\phi_i)}\frac{\partial\phi_i}{\partial\alpha} \right)\\
+& = & \left[ \frac{\delta\mathcal{L}}{\delta\phi_i} - \left( \delta_\mu \frac{\delta\mathcal{L}}{\delta(\partial_\mu\phi_i)} \right)\right] \frac{\partial\phi_i}{\partial\alpha} + \partial_\mu \left(\frac{\delta\mathcal{L}}{\delta(\partial_\mu\phi_i)}\frac{\partial\phi_i}{\partial\alpha} \right)
+\end{eqnarray}
+Der erste Summand entspricht den Euler-Lagrange-Gleichungen und ist somit 0. Damit ist nach Voraussetzung allerdings auch der zweite Summand Null. Diesen schauen wir uns etwas n"aher an:
+\begin{eqnarray}
+\frac{\delta\mathcal{L}}{\delta\alpha} & = & \sum_{i=1}^N\partial_\mu \left(\frac{\delta\mathcal{L}}{\delta(\partial_\mu\phi_i)}\frac{\partial\phi_i}{\partial\alpha} \right)\nonumber\\ & = & \partial_\mu \sum_{i=1}^N \frac{\delta\mathcal{L}}{\delta(\partial_\mu\phi_i)}\varphi_i\nonumber\\ & = & \partial_\mu j^\mu = 0
+\end{eqnarray}
+Der Noether Strom erf"ullt also offensichtlich die Kontinuit"atsgleichung.\newpage
+Betrachten wir nun freie, komplexe Skalarfelder $\phi(x)$, $\phi^*(x)$ mit
+\begin{eqnarray}
+\mathcal{L}(\phi,\partial_\mu\phi,\phi^*,\partial_\mu\phi^*) = \partial_\mu\phi^*(x)\partial^\mu\phi(x) - m^2\phi^*(x)\phi(x) \;.
+\end{eqnarray}
+Das System ist offensichtlich invariant unter einer Phasentransformation (globale $U(1)$ Symmetrie):
+\begin{eqnarray}
+\phi' = e^{i\alpha}\phi \quad,\quad \phi^{*\prime} = e^{-i\alpha}\phi^*
+\end{eqnarray}
+Damit ergibt sich f"ur die $\varphi_i$ im Noether Strom:
+\[\varphi_1 = \frac{\partial\phi}{\partial\alpha}= i\phi \quad,\quad \varphi_2 = \frac{\partial\phi^*}{\partial\alpha}= -i\phi^* \]
+Wir setzen dieses Ergebnis ein und erhalten den Noether Strom f"ur komplexe, freie Skalarfelder:
+\begin{eqnarray}
+j^\nu & = & \sum_{i=1}^2 \frac{\delta\mathcal{L}}{\delta(\partial_\nu\phi_i)}\varphi_i\nonumber\\ & = & \frac{\delta\mathcal{L}}{\delta(\partial_\nu\phi)}\frac{\partial\phi}{\partial\alpha} + \frac{\delta\mathcal{L}}{\delta(\partial_\nu\phi^*)}\frac{\partial\phi^*}{\partial\alpha}\nonumber\\ & = & (\partial_\mu\phi^*)g^{\mu\nu}i\phi - (\partial^\nu\phi)i\phi^* \nonumber\\ & = & i\left((\partial^\nu\phi^*)\phi - (\partial^\nu\phi)\phi^*\right)
+\end{eqnarray}
+Hieraus resultiert die Ladung:
+\begin{eqnarray}
+Q = \int_V d\vec{x} \; j^0 & = & i \int_V d^3x \: \left((\partial^0\phi^*)\phi - (\partial^0\phi)\phi^*\right)\nonumber\\ & = & i \int_V d^3x\: \left((\dot{\phi^*})\phi - (\dot{\phi})\phi^*\right)
+\end{eqnarray}
+Die L"osung der Klein-Gordon-Gleichung sind ebene Wellen:
+\begin{eqnarray*}
+\phi & = & Ne^{+ipx} = Ne^{+ip^0x_0 - i\vec{p}\cdot\vec{x}}\\
+\phi^* & = & Ne^{-ipx} = Ne^{-ip^0x_0 + i\vec{p}\cdot\vec{x}}
+\end{eqnarray*}
+Damit l"a"st sich die $j^0$ Komponente des 4er-Stromes wie folgt schreiben:
+\begin{eqnarray}
+j^0 & = & i [(\partial^0\phi^*)\phi - (\partial^0\phi)\phi^*]\nonumber\\ & = & i [ip^0\phi^*\phi - (-i)p^0\phi\phi^*]\nonumber\\ & = & 2p^0 |\phi|^2
+\end{eqnarray}
+Das Betragsquadrat $|\phi|^2$ ist gr"o"ser oder gleich Null. $p^0$ k"onnen wir die Energie $E$ zuordnen. Diese ist mit $E=\pm\sqrt{\vec{p}^{ 2} + m^2}$ gegeben. Damit ist $j^0$ nicht positiv definit und nicht als Wahrscheinlichkeitsdichte auffassbar.\\
+Einen Ausweg schafft die Umeichung der Felder. Wir betrachten die in (7) definierte Phasentransformation und f"ugen ein $e$ f"ur die Ladung hinzu:
+\begin{eqnarray}
+\phi' = e^{ie\alpha}\phi \quad,\quad \phi^{*\prime} = e^{-ie\alpha}\phi^*
+\end{eqnarray}
+Damit kann man nun $j^0$ als Ladungsdichte interpretieren. Ein negativer Wert deutet damit nur auf eine negative Ladung (z.B. Elektron) hin.
+\end{document}
