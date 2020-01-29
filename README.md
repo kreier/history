@@ -7,14 +7,14 @@ Over the years I used a handful of programming languages. Here are a few example
 
 ## 2020
 
-<img src="pic/mlogo.jpg" align="right" width="100px"> <img src="pic/kotlin.svg" align="right" width="100px">
+<img src="pic/mlogo.jpg" align="right" width="60px"> <img src="pic/kotlin.svg" align="right" width="60px">
 
 First use of Kotlin with T400 remote project.
 
 ## 2019
 
 <img src="pic/micropython.jpg" align=right width="100px">
-<img src="pic/jupyter.png" align="right" width="100px">
+<img src="pic/jupyter.png" align="right" width="70px">
 
 Started with Jupyter notebook with my students. This includes Markdown, LaTeX, TeX and Python3. Organized with Anaconda. And I started Micropython for the robot projects.
 
@@ -50,14 +50,14 @@ The Java project [ar65view](https://github.com/kreier/ar65view) was started and 
 
 ## 2000
 
-<img src="pic/cpp.svg" align="right" width="100px">
+<img src="pic/cpp.svg" align="right" width="60px">
 
 To solve some problems of my physics study I returned to C and expanded to C++ with some simple coding.
 
 ## 1999
 
-<img src="pic/html5.svg" align="right" width="100px">
-<img src="pic/css.svg" align="right" width="100px">
+<img src="pic/html5.svg" align="right" width="70px">
+<img src="pic/css.svg" align="right" width="50px">
 
 Writing my first webpage [saiht.de](http://saiht.de) I started to use HTML.
 
@@ -67,13 +67,13 @@ VBA or [Visual Basic for Applications](https://en.wikipedia.org/wiki/Visual_Basi
 
 ## 1992
 
-<img src="pic/turbopascal.svg" align="right" width="100px">
+<img src="pic/turbopascal.png" align="right" width="100px">
 
 Some TurboPascal at school on 386DX and 486 SX. The gymnasium had not yet been named, but is called now Lise-Meitner-Gymnasium.
 
 ## 1991
 
-<img src="pic/atari.svg" align="right" width="100px">
+<img src="pic/atari.png" align="right" width="70px">
 
 With my new Atari STFM520 I started Omicron Basic and Lattice C. The latter one was supposed to be fast, developed by a british company, but proved to be inferiour and slower in math calculations than the Basic interpreter. It took another 10 years until I touched C again.
 
