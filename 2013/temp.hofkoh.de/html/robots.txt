@@ -1,0 +1,5 @@
+# robots.txt zu http://*.saiht.de/
+
+User-agent: * 
+
+Disallow: /

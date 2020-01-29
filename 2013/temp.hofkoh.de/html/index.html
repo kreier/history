@@ -1,0 +1,56 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="date" content="2013-11-23"><title>Sonne und Temperatur in Hofkoh</title>
+	<meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<script type="text/javascript" src="data.js"></script> <!-- Kerndaten der letzten Stunde, schon als Daten -->
+	<script type="text/javascript" src="jquery-1.4.1.min.js"></script><!-- jquery um Datei vom Server laden zu können-->
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script><!-- für graph und charts -->
+	<script type="text/javascript" src="tempdata.js"></script><!-- nur vorübergehend!-->	
+	<script type="text/javascript" src="dynamic.js"></script><!-- Visualisierung der Messdaten, Aktualisierung -->	
+</head>
+
+<body>
+
+<div id="Kopf">
+  <span style="font-size: 150%;"><b>Messdaten aus Hofkoh</b></span><br>
+  <span style="font-size: 66%;">WR703N mit OpenWRT als Server für 1wire</span>
+</div>
+
+<p id="versuch">Die folgenden Daten wurden automatisch mit einem Server auf OpenWRT und 1Wire erstellt und auf diese Website hochgeladen. Sie sind nur zur privaten Verwendung vorgesehen.</p>
+
+<h2 style="border: 0; padding: 10px; color: white; background-color: #d33;">Temperatur der letzten Stunde</h2>
+
+<p>Datum und Zeit: <span id="tempea">[script loading]</span></p>
+
+<p>Temperatur:</p>
+
+<p style="text-align:center;">
+<span style="text-align:center; margin:10px; padding:10px; font-size: x-large; background:lightgreen;">
+<span id="tempeb">10</span> °C</span></p>
+
+<p><span id="uptime">0d 00:00:01</span></p>
+
+<p><span id="wlan">00/00</span>
+<span style="float:right;"><a href="info.pdf">Information</a></span></p>
+
+<div id="chart_div" style="width: 100%; height: 500px;"></div>
+
+<p style="text-align:center;">
+<span style="text-align:center; margin:10px; padding:10px; font-size: large; background:lightblue;"><a href="history.html">Historische Messwerte</a></span></p>
+
+<p>heute:<pre style="margin:10px;"><span id="heute">date time measured temperature</span></pre></p>
+<p>gestern:<pre style="margin:10px;"><span id="gestern">date time measured temperature</span></pre></p>
+
+<p style="margin: 0pt; padding: 0pt;">
+<img src="http://www.saiht.de/counter/basis-cgi/c.php?n=count" alt="1000" align="right" height="14" width="70">
+</p>
+
+<div id="Fuss">
+<small><a name="bottom">© 2009-2015</a> Matthias Kreier</small>
+</div>
+</body></html>

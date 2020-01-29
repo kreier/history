@@ -1,0 +1,43 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="date" content="2015-01-01"><title>Historische Temperatur in Hofkoh</title>
+	<meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<script type="text/javascript" src="data.js"></script> <!-- Kerndaten der letzten Stunde, schon als Daten -->
+	<script type="text/javascript" src="jquery-1.4.1.min.js"></script><!-- jquery um Datei vom Server laden zu können-->
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script><!-- für graph und charts -->
+	<script type="text/javascript" src="tempdata.js"></script><!-- nur vorübergehend!-->	
+	<script type="text/javascript" src="history.js"></script><!-- Visualisierung der Messdaten, Aktualisierung -->	
+</head>
+
+<body>
+
+<div id="Kopf">
+  <span style="font-size: 150%;"><b>Historische Messdaten aus Hofkoh</b></span><br>
+  <span style="font-size: 66%;">WR703N mit OpenWRT als Server für 1wire</span>
+</div>
+
+<h3 style="border: 0; padding: 10px; color: white; background-color: #d33; text-align:center;">
+<a href="" style="color:lightgray;">&ltfrüher</a>
+<span id="datum">28. 12. 2014 </span>
+<a href="" style="color:lightgray;">später&gt</a></h2>
+
+<p style="text-align:center;">Eingabe: Tag Monat Jahr</p>
+
+<div id="chart_div" style="width: 100%; height: 500px;"></div>
+	
+<p>heute:<pre style="margin:10px;"><span id="heute">date time measured temperature</span></pre></p>
+<p>gestern:<pre style="margin:10px;"><span id="gestern">date time measured temperature</span></pre></p>
+
+<p style="margin: 0pt; padding: 0pt;">
+<img src="http://www.saiht.de/counter/basis-cgi/c.php?n=count" alt="1000" align="right" height="14" width="70">
+</p>
+
+<div id="Fuss">
+<small><a name="bottom">© 2009-2015</a> Matthias Kreier</small>
+</div>
+</body></html>
