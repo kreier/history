@@ -4,4 +4,6 @@ After having upgraded some of my routers with OpenWRT and ddwrt I learned more a
 
 ## Weatherstation
 
-By November 23rd, 2013 the system was up and running, pushing the data to the ftp server every hour. And it ran successfully until January 2015.
+By November 23rd, 2013 the system was up and running. It took a little while to push the data to the internet, but the database contains daily files from 20141212 to 20160728. The [documentation](temp.hofkoh.de/info.pdf) was written 1. April 2015.
+
+![graphischer Temperaturverlauf](temp.hofkoh.de/visual.jpg)
