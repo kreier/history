@@ -7,15 +7,32 @@ Over the years I used a handful of programming languages. Here are a few example
 
 ## 2020
 
+<img src="pic/Mlogo.png" align=right>
+
 First use of Kotlin with T400 remote project.
 
 ## 2019
 
-Started with Jupyter notebook with my students. This includes Markdown, LaTeX, TeX and Python3. Organized with Anaconda.
+<img src="pic/micropython.jpg" align=right>
+<img src="pic/jupyter.png" align=right>
+
+Started with Jupyter notebook with my students. This includes Markdown, LaTeX, TeX and Python3. Organized with Anaconda. And I started Micropython for the robot projects.
 
 ## 2018
 
 The BeTogetherConference in November 2018 inspired me to write the first lines in Python - and document it in [python2018 repository](https://github.com/kreier/python2018).
+
+## 2016
+
+
+## 2015
+
+<img src="pic/arduino.png" align=right>
+
+Start of Arduino.
+
+## 2013
+
 
 ## 2008
 
