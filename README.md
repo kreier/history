@@ -30,6 +30,7 @@ Tried different linux distrubutions and companies for our school network at the 
 
 ## 2015
 
+<img src="pic/vacuum.jpg" align="right" height="70px">
 <img src="pic/arduino.png" align="right" width="100px">
 
 Start of Arduino. From stepper motor to pressure sensor in vacuum.
