@@ -1,5 +1,6 @@
 # Programming History
-Short documentation of programming projects
+
+A short documentation of my programming projects.
 
 <img src="pic/duke.gif" align="right">
 
@@ -49,7 +50,7 @@ AR65view is finalized and uploaded to Sourceforge. Now using version control wit
 
 The Java project [ar65view](https://github.com/kreier/ar65view) was started and uses Swing GUI elements for data analysis at the Humboldt University to Berlin.
 
-## 2000
+## [2000](2000)
 
 <img src="pic/cpp.svg" align="right" width="60px">
 
