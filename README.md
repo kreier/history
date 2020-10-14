@@ -88,3 +88,35 @@ Some Basic programming on my [ZX81](https://en.wikipedia.org/wiki/ZX81) - gift f
 ## 1987
 
 The department of education provided us some [KC85/3](https://en.wikipedia.org/wiki/KC_85) in the Haus am Anger and our Math teacher Herr Klötzer dedicated some time after school for us to learn the first lines of code.
+
+## Number of different languages used
+
+It's not easy to determine all the different languages, but it's around 20. Like BASIC, C, Turbo Pascal, VisualBasic, HTML, C++, CSS, PHP, JAVA, SQL, LaTeX, JavaScript, Spring roo, Shell, Arduino C, Python, Markdown, Matlab, Mathematica and Jupyter. 
+
+| year | language                   | application                                | system                 |
+|------|----------------------------|--------------------------------------------|------------------------|
+| 1987 | BASIC                      | simple math                                | KC 85/3 with DataSette |
+| 1990 | Lattice C                  | prime numbers                              | Atari 520STFM          |
+| 1992 | Turbo Pascal               | calculus and computer class at high school | 486 SX 25              |
+| 1997 | Virtual Basic Script       | statistics of customer records             | Pentium II 233         |
+| 1999 | Hyper Text Markup Language | website https://saiht.de                   | Cyrix 166 233+         |
+| 2000 | GNU C++                    | physical approximations                    | K6/2 400               |
+| 2001 | Cascading Style Sheets CSS | website https://saiht.de                   | K6/2 400               |
+| 2003 | PHP4                       | digital guest book                         | Optik modifiziert      |
+| 2005 | Java 1.5                   | GUI wit AWT and Swing                      | Pentium III 1200       |
+| 2006 | PHP4 und MySQL             | WordPress                                  | on a free server www   |
+| 2006 | QT 4.1 und C++             | analytics of empirical data colletion      | Intel Core 2 Duo       |
+| 2007 | LaTeX                      | scientific publication                     | Intel Core 2 Duo       |
+| 2008 | Java 6, NetBeans 6         | analytics of empirical data colletion      | Athlon 64              |
+| 2009 | JavaScript                 | dynamic html                               | Athlon 64              |
+| 2011 | EJB, Spring, roo           | App Engine Anwendung                       | Phenom X4 955          |
+| 2012 | C++ auf MIPS               | nbench                                     | Atheros AR9132         |
+| 2014 | shell scripts              | temperature station with 1wire             | TL-WR703N              |
+| 2015 | Arduino C                  | measure barometric pressure                | Arduino Uno 16 MHz     |
+| 2018 | Python                     | prime numbers                              | Xeon X5550             |
+| 2018 | Markdown                   | Github documentation                       | i7 4890HQ              |
+| 2019 | Matlab                     | Battle Royale simulatoin                   | i5 4250U               |
+| 2019 | Mathematica                | Bifurcation                                | Raspberry Pi 4         |
+| 2019 | Jupyter                    | documentation of science projects          | i7 6820HQ              |
+
+To be continued ...
