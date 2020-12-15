@@ -6,11 +6,15 @@ A short documentation of my programming projects.
 
 Over the years I used a handful of programming languages. Here are a few examples for personal documentation.
 
+## 2021
+
+To be determinded.
+
 ## 2020
 
 <img src="pic/mlogo.jpg" align="right" width="60px"> <img src="pic/kotlin.svg" align="right" width="60px">
 
-First use of Kotlin with T400 remote project.
+First use of Kotlin with T400 remote project. Micropython for T400 and T-Display.
 
 ## 2019
 
@@ -115,8 +119,9 @@ It's not easy to determine all the different languages, but it's around 20. Like
 | 2015 | Arduino C                  | measure barometric pressure                | Arduino Uno 16 MHz     |
 | 2018 | Python                     | prime numbers                              | Xeon X5550             |
 | 2018 | Markdown                   | Github documentation                       | i7 4890HQ              |
-| 2019 | Matlab                     | Battle Royale simulatoin                   | i5 4250U               |
+| 2019 | Matlab                     | Battle Royale simulation                   | i5 4250U               |
 | 2019 | Mathematica                | Bifurcation                                | Raspberry Pi 4         |
 | 2019 | Jupyter                    | documentation of science projects          | i7 6820HQ              |
+| 2020 | MicroPython                | control a robot car, display instructions  | ESP32                  |
 
 To be continued ...
