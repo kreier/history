@@ -123,7 +123,7 @@ It's not easy to determine all the different languages, but it's around 20. Like
 | 2019 | Mathematica                | Bifurcation                                | Raspberry Pi 4         |
 | 2019 | Jupyter                    | documentation of science projects          | i7 6820HQ              |
 | 2020 | MicroPython                | control a robot car, display instructions  | ESP32                  |
-
+| 2021 | Swift                      | Swift playgrounds for ICT at SSIS          | iPad Pro 10.5 2017     |
 
 To be continued ...
 
