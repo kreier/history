@@ -124,4 +124,12 @@ It's not easy to determine all the different languages, but it's around 20. Like
 | 2019 | Jupyter                    | documentation of science projects          | i7 6820HQ              |
 | 2020 | MicroPython                | control a robot car, display instructions  | ESP32                  |
 
+
 To be continued ...
+
+# History of consumption: energy, internet, water and gas
+
+For some years I track my consumption of several commodoties:
+
+![The consumption](consumption/electricity2021.png)
+
