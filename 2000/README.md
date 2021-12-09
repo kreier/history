@@ -4,7 +4,7 @@ In September I started to study physics at the Humboldt Universität zu Berlin. 
 
 ## First program in C++
 
-Connecting this new field to programming the first program I wrote in C++ was about an integral. Here from October 2000:
+Connecting this new field to programming the [first program](Integralberechnung.cc) I wrote in C++ was about an integral. Here from October 2000:
 
 ``` cpp
 // mein erstes C++ Programm
@@ -229,6 +229,6 @@ double eingabe()
 
 ## Further examples
 
-[calculating prime numbers](Primzahlberechnung.cc)
-[convert data files from .vir to .qti](vir2qti.cpp)
-[updated calculation of prime numbers](prim2.cc)
+- [calculating prime numbers](Primzahlberechnung.cc)
+- [convert data files from .vir to .qti](vir2qti.cpp)
+- [updated calculation of prime numbers](prim2.cc)
