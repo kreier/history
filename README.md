@@ -124,8 +124,14 @@ It's not easy to determine all the different languages, but it's around 20. Like
 | 2019 | Jupyter                    | documentation of science projects          | i7 6820HQ              |
 | 2020 | MicroPython                | control a robot car, display instructions  | ESP32                  |
 | 2021 | Swift                      | Swift playgrounds for ICT at SSIS          | iPad Pro 10.5 2017     |
+| 2022 | CircuitPython              | [ssis.bit](https://github.com/ssisbit/ssis.bit) computer for students   | ESP32-S2     |
 
-To be continued ...
+# Analysis of degrading battery history with cycles and time
+
+For some time I analyse the batteries in my Apple devices. First with [coconutBattery](https://www.coconut-flavour.com/coconutbattery/) since 2016 and now with [3uTools](http://www.3u.com/) since 2021. For several devices I documented the degrading battery performance over 8 years and 1000 cycles:
+
+![days](battery/degrading_batteries_days2021.png)
+![cycles](battery/degrading_batteries_cycles2021.png)
 
 # History of consumption: energy, internet, water and gas
 
