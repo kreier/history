@@ -1,6 +1,9 @@
-# Programming History
+# History Programming and Energy Consumption
 
-A short documentation of my programming projects.
+![GitHub License](https://img.shields.io/github/license/kreier/history)
+![GitHub Release](https://img.shields.io/github/v/release/kreier/history)
+
+A short documentation of my programming projects. And in part how it affected my energy consumption.
 
 <img src="pic/duke.gif" align="right">
 
